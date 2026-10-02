@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light">
+<title>Efigenia Cala Gómez</title>
+<meta name="description" content="Efigenia Cala Gómez · Ingeniera Agrónoma y Consultora Senior en floricultura, horticultura y berries.">
+<meta property="og:title" content="Efigenia Cala Gómez">
+<meta property="og:description" content="Ingeniera Agrónoma · Consultora Senior · Floricultura, horticultura y berries">
+<meta name="theme-color" content="#F4F1EA">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23A48D78'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Poppins:wght@400;500&display=swap">
+<style>
+/* Paleta de referencias (porcelana, avena, arena, roca, tierra, bruma). Layout: portada con foto que se funde con el fondo, nombre en serif, íconos redondos, franja de cifras, tarjetas de acción suaves, servicios en mosaico 2×2, experiencia en desplegables y cierre "Hablemos". Una sola apariencia clara. */
+:root{
+  --ground:#F4F1EA;
+  --paper:#FDFCF9;
+  --panel:#ECE5DA;
+  --line:#DCCFBF;
+  --accent:#A48D78;
+  --tierra:#82665A;
+  --sage:#C0C6BA;
+  --ink:#3B3530;
+  --muted:#6F665E;
+  --shadow:0 1px 2px rgba(90,70,50,.05),0 14px 30px -20px rgba(90,70,50,.30);
+  --font-display:"Cormorant Garamond", Garamond, Georgia, serif;
+  --font-body:"Poppins", "Avenir Next", "Helvetica Neue", Arial, sans-serif;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html,body{background:var(--ground)}
+body{margin:0;color:var(--ink);font-family:var(--font-body);font-size:16.5px;line-height:1.6;-webkit-font-smoothing:antialiased}
+.wrap{max-width:460px;margin:0 auto;padding-inline:18px;padding-block:0 40px}
+a{color:inherit}
+
+/* Portada */
+.hero{position:relative;margin-inline:-18px}
+.hero img{display:block;width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 18%;max-height:520px}
+.hero::after{content:"";position:absolute;inset:auto 0 0 0;height:45%;background:linear-gradient(to bottom,rgba(244,241,234,0),var(--ground) 92%)}
+.hero .tag{position:absolute;top:18px;left:18px;right:18px;display:flex;justify-content:space-between;z-index:1;font-size:11.5px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:#FDFCF9;text-shadow:0 1px 6px rgba(0,0,0,.35)}
+.intro{position:relative;z-index:1;margin-top:-84px;text-align:center}
+.eyebrow{margin:14px 0 0;line-height:1.7;font-size:12.5px;font-weight:500;letter-spacing:.18em;text-transform:uppercase;color:var(--tierra)}
+h1{margin:0;font-family:var(--font-display);font-weight:500;font-size:clamp(42px,12vw,54px);line-height:1;letter-spacing:.01em}
+.tagline{margin:14px auto 0;max-width:22em;font-family:var(--font-display);font-style:italic;font-size:21px;line-height:1.35;color:var(--muted)}
+.orn{display:flex;align-items:center;gap:10px;width:170px;margin:20px auto 0}
+.orn::before,.orn::after{content:"";flex:1;height:1px;background:var(--accent)}
+.orn span{width:6px;height:6px;transform:rotate(45deg);background:var(--accent)}
+.social{display:flex;justify-content:center;gap:14px;margin-top:20px}
+.social a{width:50px;height:50px;border-radius:14px;background:var(--paper);display:grid;place-items:center;box-shadow:var(--shadow);color:var(--ink)}
+.social svg{width:22px;height:22px}
+
+/* Cifras */
+.kpis{display:grid;grid-template-columns:repeat(3,1fr);margin-top:30px;padding:18px 6px;border-radius:18px;background:var(--paper);box-shadow:var(--shadow);text-align:center}
+.kpis div+div{border-left:1px solid var(--line)}
+.kpis b{display:block;font-family:var(--font-display);font-weight:500;font-size:38px;line-height:1;color:var(--tierra)}
+.kpis span{display:block;margin-top:6px;font-size:12px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);line-height:1.35}
+
+/* Tarjetas de acción */
+.actions{display:grid;gap:14px;margin-top:22px}
+.act{display:grid;grid-template-columns:58px 1fr 34px;align-items:center;gap:16px;padding:16px 16px 16px 16px;border-radius:20px;background:var(--paper);box-shadow:var(--shadow);text-decoration:none;color:var(--ink)}
+.act .c{width:58px;height:58px;border-radius:50%;background:var(--ground);display:grid;place-items:center;color:var(--tierra);box-shadow:inset 0 0 0 1px var(--line)}
+.act .c svg{width:25px;height:25px}
+.act h3{margin:0;font-family:var(--font-display);font-weight:600;font-size:21px;letter-spacing:.06em;text-transform:uppercase;line-height:1.1}
+.act p{margin:4px 0 0;font-size:14.5px;line-height:1.45;color:var(--muted)}
+.act .go{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;background:var(--ground);color:var(--ink)}
+.act .go svg{width:17px;height:17px}
+.act:hover .go{background:var(--panel)}
+
+/* Secciones */
+.sec{margin-top:48px}
+.sec h2{margin:0;font-family:var(--font-display);font-style:italic;font-weight:500;font-size:34px;line-height:1.1;text-align:center}
+.sec h2 + .orn{margin-top:14px}
+.about{margin-top:20px;text-align:center}
+.about p{margin:0 auto;max-width:30em}
+.about p + p{margin-top:12px}
+.about strong{font-weight:500;color:var(--tierra)}
+.chain{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin:20px 0 0;padding:0;list-style:none}
+.chain li{padding:6px 12px;border-radius:999px;background:var(--paper);box-shadow:inset 0 0 0 1px var(--line);font-size:13.5px;color:var(--muted)}
+
+.tiles{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:22px}
+.tile{padding:20px 16px 18px;border-radius:18px;background:var(--paper);box-shadow:var(--shadow);text-align:center;min-width:0}
+.tile .c{width:52px;height:52px;margin:0 auto;border-radius:50%;display:grid;place-items:center;color:var(--tierra);box-shadow:inset 0 0 0 1px var(--accent)}
+.tile .c svg{width:24px;height:24px}
+.tile h3{margin:12px 0 0;font-family:var(--font-display);font-weight:600;font-size:20px;line-height:1.15}
+.tile p{margin:6px 0 0;font-size:14px;line-height:1.45;color:var(--muted)}
+
+.acc{display:grid;gap:10px;margin-top:22px}
+details{border-radius:16px;background:var(--paper);box-shadow:var(--shadow)}
+summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:1fr 30px;align-items:center;gap:12px;padding:17px 18px}
+summary::-webkit-details-marker{display:none}
+summary b{display:block;font-weight:500;font-size:16.5px}
+summary small{display:block;font-size:13.5px;color:var(--muted)}
+summary .dw{width:30px;height:30px;border-radius:50%;display:grid;place-items:center;background:var(--ground);transition:transform .2s}
+summary .dw svg{width:16px;height:16px}
+details[open] .dw{transform:rotate(180deg)}
+details p{margin:0;padding:0 18px 18px;font-size:15.5px;line-height:1.6;color:var(--ink)}
+
+/* Cierre */
+.close{margin-top:48px;padding:32px 22px 26px;border-radius:24px;background:var(--panel);text-align:center}
+.close h2{margin:0;font-family:var(--font-display);font-style:italic;font-weight:500;font-size:36px;line-height:1}
+.close > p{margin:12px auto 0;max-width:20em;color:var(--muted)}
+.close .social{margin-top:22px}
+.save{display:flex;align-items:center;justify-content:center;gap:10px;margin-top:24px;min-height:56px;border-radius:14px;background:var(--tierra);color:#FDFCF9;text-decoration:none;font-size:17px;font-weight:500}
+.save svg{width:20px;height:20px}
+.foot{margin:22px 0 0;text-align:center;font-size:13px;color:var(--muted)}
+.foot em{display:block;font-family:var(--font-display);font-size:18px;color:var(--ink);margin-bottom:4px}
+a:focus-visible,summary:focus-visible{outline:2px solid var(--tierra);outline-offset:3px}
+@media (max-width:360px){.tiles{grid-template-columns:1fr}.act{grid-template-columns:50px 1fr 30px;gap:12px}.act .c{width:50px;height:50px}}
+</style>
+</head>
+<body>
+<main class="wrap">
+  <header class="hero">
+    <div class="tag"><span>Perfil profesional</span><span>Consultoría</span></div>
+    <img src="efigenia-retrato.jpg" alt="Efigenia Cala Gómez" width="800" height="1000">
+  </header>
+  <section class="intro">
+    <h1>Efigenia<br>Cala Gómez</h1>
+    <p class="eyebrow">Ingeniera Agrónoma<br>Consultora Senior</p>
+    <p class="tagline">Conocimiento de campo para hacer crecer flores, cultivos y equipos.</p>
+    <div class="orn" aria-hidden="true"><span></span></div>
+    <nav class="social" aria-label="Contacto rápido">
+      <a href="https://wa.me/573102996845" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21l1.7-5A8.5 8.5 0 1 1 8 19.4L3 21z"/><path d="M9 9.5c0 3 2.5 5.5 5.5 5.5l1.2-1.3-1.8-1-1 .8a4 4 0 0 1-2.4-2.4l.8-1-1-1.8L9 9.5z"/></svg></a>
+      <a href="tel:+573102996845" aria-label="Llamar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg></a>
+      <a href="mailto:ecalagom@gmail.com" aria-label="Correo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="1.5"/><path d="M3.5 6l8.5 7 8.5-7"/></svg></a>
+      <a href="https://www.linkedin.com/in/efigenia-cala-gomez-41611056" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M8 10.5V17M8 7.5v.01M12 17v-3.8c0-1.6 1-2.7 2.4-2.7S16.5 11.6 16.5 13v4M12 10.5V17"/></svg></a>
+    </nav>
+  </section>
+
+  <div class="kpis">
+    <div><b>38</b><span>Años de<br>trayectoria</span></div>
+    <div><b>30+</b><span>Especies<br>de flor</span></div>
+    <div><b>13</b><span>Hortalizas<br>y berries</span></div>
+  </div>
+
+  <nav class="actions" aria-label="Accesos">
+    <a class="act" href="https://wa.me/573102996845" target="_blank" rel="noopener"><span class="c"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5" width="17" height="15" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg></span><span><h3>Agendar asesoría</h3><p>Escríbele por WhatsApp y coordina una visita o reunión.</p></span><span class="go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 6l6 6-6 6"/></svg></span></a>
+    <a class="act" href="#servicios"><span class="c"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h6"/></svg></span><span><h3>Servicios</h3><p>Diagnóstico, nuevos productos, postcosecha y formación.</p></span><span class="go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 6l6 6-6 6"/></svg></span></a>
+    <a class="act" href="#experiencia"><span class="c"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="2.2"/><path d="M12 6.8c0-2.5 3.6-2.5 3.6 0S12 9 12 9M12 6.8c0-2.5-3.6-2.5-3.6 0S12 9 12 9M14.2 9c2.5 0 2.5 3.6 0 3.6S12 9 12 9M9.8 9c-2.5 0-2.5 3.6 0 3.6S12 9 12 9M12 11.2V21M12 17c-2.5 0-4-1.5-4.5-3.5M12 18.5c2-.2 3.4-1.4 3.8-3"/></svg></span><span><h3>Experiencia</h3><p>Flores de corte, diversificados, hortalizas y berries.</p></span><span class="go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 6l6 6-6 6"/></svg></span></a>
+  </nav>
+
+  <section class="sec" aria-labelledby="sobre">
+    <h2 id="sobre">Sobre mí</h2>
+    <div class="orn" aria-hidden="true"><span></span></div>
+    <div class="about">
+      <p>Soy ingeniera agrónoma y llevo 38 años en los sectores floricultor y hortícola. Participé en el desarrollo de <strong>Alstroemeria Perfection</strong> y <strong>Alstroemeria Gold</strong>.</p>
+      <p>Acompaño a las empresas en toda la cadena, uniendo la visión técnica con la productiva y comercial:</p>
+    </div>
+    <ul class="chain">
+      <li>Material vegetal</li><li>Producción</li><li>Cosecha</li><li>Postcosecha</li><li>Empaque</li><li>Logística</li><li>Cliente</li>
+    </ul>
+  </section>
+
+  <section class="sec" id="servicios" aria-labelledby="ayuda">
+    <h2 id="ayuda">Cómo puedo ayudar</h2>
+    <div class="orn" aria-hidden="true"><span></span></div>
+    <div class="tiles">
+      <div class="tile"><span class="c"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="6.5"/><path d="M20 20l-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span><h3>Diagnóstico técnico</h3><p>Causas y acciones correctivas en campo.</p></div>
+      <div class="tile"><span class="c"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21v-8"/><path d="M12 13c0-4 3-6.5 7.5-6.5 0 4.5-3 6.5-7.5 6.5z"/><path d="M12 15.5c0-3.2-2.4-5.3-6.5-5.3 0 3.7 2.4 5.3 6.5 5.3z"/><path d="M7 21h10"/></svg></span><h3>Nuevos productos</h3><p>De la idea a la viabilidad comercial.</p></div>
+      <div class="tile"><span class="c"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 7.5L12 3l8.5 4.5v9L12 21l-8.5-4.5z"/><path d="M3.5 7.5L12 12l8.5-4.5M12 12v9"/></svg></span><h3>Postcosecha y empaque</h3><p>Calidad, vida útil y presentación.</p></div>
+      <div class="tile"><span class="c"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.2"/><path d="M3 20a6 6 0 0 1 12 0"/><circle cx="17" cy="9" r="2.4"/><path d="M16 14.2a4.6 4.6 0 0 1 5.5 4.6"/></svg></span><h3>Formación de equipos</h3><p>Ingenieros, supervisores y operarios.</p></div>
+    </div>
+  </section>
+
+  <section class="sec" id="experiencia" aria-labelledby="exp">
+    <h2 id="exp">Experiencia por cultivo</h2>
+    <div class="orn" aria-hidden="true"><span></span></div>
+    <div class="acc">
+      <details><summary><span><b>Flores de corte</b><small>Alstroemeria, clavel, Gypsophila…</small></span><span class="dw"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9.5l6 6 6-6"/></svg></span></summary><p>Alstroemeria (Perfection, Gold), clavel, Gypsophila, crisantemo y pompón, Lisianthus, Hydrangeas, gerberas, ranúnculos, Delphinium, girasol, lirios y mini callas.</p></details>
+      <details><summary><span><b>Diversificados y follajes</b><small>Limonium, Snapdragon, Aster…</small></span><span class="dw"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9.5l6 6 6-6"/></svg></span></summary><p>Limonium, Snapdragon, Aster, Solidago, Astilbe, Hypericum, Trachelium, Craspedia, escabiosa, Nigella, Matricaria y brásicas ornamentales, entre otras.</p></details>
+      <details><summary><span><b>Hortalizas de especialidad</b><small>Guisante, cogollo de Tudela, rúcula…</small></span><span class="dw"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9.5l6 6 6-6"/></svg></span></summary><p>Guisante, cogollo de Tudela, rúcula, coliflor, chinacol, ruibarbo, zanahoria, acelga y espinaca.</p></details>
+      <details><summary><span><b>Frutas y berries</b><small>Fresa, frambuesa, mora, arándano</small></span><span class="dw"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9.5l6 6 6-6"/></svg></span></summary><p>Fresa, frambuesa, mora y arándano, además de otros productos de especialidad.</p></details>
+    </div>
+  </section>
+
+  <section class="close" aria-labelledby="hab">
+    <h2 id="hab">Hablemos</h2>
+    <p>Cuéntame qué necesita tu cultivo o tu empresa.</p>
+    <nav class="social" aria-label="Contacto">
+      <a href="https://wa.me/573102996845" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21l1.7-5A8.5 8.5 0 1 1 8 19.4L3 21z"/><path d="M9 9.5c0 3 2.5 5.5 5.5 5.5l1.2-1.3-1.8-1-1 .8a4 4 0 0 1-2.4-2.4l.8-1-1-1.8L9 9.5z"/></svg></a>
+      <a href="tel:+573102996845" aria-label="Llamar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg></a>
+      <a href="mailto:ecalagom@gmail.com" aria-label="Correo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="1.5"/><path d="M3.5 6l8.5 7 8.5-7"/></svg></a>
+      <a href="https://www.linkedin.com/in/efigenia-cala-gomez-41611056" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M8 10.5V17M8 7.5v.01M12 17v-3.8c0-1.6 1-2.7 2.4-2.7S16.5 11.6 16.5 13v4M12 10.5V17"/></svg></a>
+    </nav>
+    <a class="save" href="efigenia-cala-gomez.vcf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="10" cy="8" r="4"/><path d="M2.5 21a7.5 7.5 0 0 1 13-5"/><path d="M19 15v6M16 18h6"/></svg>Guardar en mis contactos</a>
+  </section>
+
+  <p class="foot"><em>Del conocimiento a la acción, del cultivo al producto.</em>Efigenia Cala Gómez · Consultoría independiente</p>
+</main>
+
+</body>
+</html>
